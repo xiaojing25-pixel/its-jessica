@@ -836,18 +836,23 @@ h1, h2, h3, h4 {
 
 /* ===== Hero Large (Home) ===== */
 .hero--large {
-  padding: 56px 0 64px;
+  min-height: calc(92vh - var(--nav-height));
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
 }
 
 .hero--large .hero__inner {
-  max-width: 1180px;
+  max-width: 1020px;
   margin: 0 auto;
   padding: 0 40px;
+  gap: clamp(40px, 6vw, 80px);
+  width: 100%;
 }
 
 .hero--large .hero__photo-frame {
-  width: clamp(220px, 22vw, 320px);
-  height: clamp(220px, 22vw, 320px);
+  width: clamp(240px, 24vw, 340px);
+  height: clamp(240px, 24vw, 340px);
 }
 
 .hero__bg-accent--2 {
