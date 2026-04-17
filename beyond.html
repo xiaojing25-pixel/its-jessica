@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beyond Work — Jessica Liu</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function() {
+      var saved = localStorage.getItem('jessica-theme');
+      var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body class="page--beyond">
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Jessica Liu</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="story.html">My Story</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="methodology.html">How I Work</a></li>
+          <li><a href="ai.html">AI & Innovation</a></li>
+          <li><a href="beyond.html" class="active">Beyond Work</a></li>
+        </ul>
+        <button class="nav__theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="nav__theme-icon nav__theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="nav__theme-icon nav__theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <button class="nav__toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-bg page-bg--yoga"></div>
+
+  <section class="section page-content">
+    <div class="container">
+      <div class="page-header-ornate">
+        <h2>Beyond Work</h2>
+        <div class="page-header-ornate__diamond"></div>
+        <p class="page-header-ornate__subtitle">The practices that shape my days</p>
+      </div>
+
+      <div class="intro-block">
+        <p>Outside of product management, I'm a certified yoga teacher — teaching at local neighborhood locations and continuing a lifelong practice of physical discipline that began on a gymnasium floor in China.</p>
+      </div>
+
+      <div class="prose">
+        <p>Yoga found me after years of intensive physical training — and it offered something different. Where rhythmic gymnastics demanded outward precision and performance, yoga demands introspective alignment and energetic awareness. The rigor is the same; the direction is inward.</p>
+      </div>
+
+      <div class="badge-row">
+        <div class="badge-item">
+          <div class="badge-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 6 8 10 12 14c4-4 4-8 0-12z"/></svg>
+          </div>
+          <div class="badge-item__text">
+            <strong>Certified Teacher</strong>
+            Active practice
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/></svg>
+          </div>
+          <div class="badge-item__text">
+            <strong>Local Studios</strong>
+            Neighborhood classes
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div class="badge-item__text">
+            <strong>Lifelong Movement</strong>
+            From gymnast to yogi
+          </div>
+        </div>
+      </div>
+
+      <div class="story-ornament">
+        <svg viewBox="0 0 200 30" preserveAspectRatio="xMidYMid meet">
+          <path d="M20 15 L85 15" stroke="currentColor" stroke-width="1" fill="none"/>
+          <circle cx="100" cy="15" r="4" fill="currentColor" opacity="0.5"/>
+          <circle cx="100" cy="15" r="8" stroke="currentColor" stroke-width="1" fill="none" opacity="0.3"/>
+          <path d="M115 15 L180 15" stroke="currentColor" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="prose">
+        <p>The thread connecting rhythmic gymnastics, yoga, and my professional work is discipline — the commitment to showing up, preparing exhaustively, and pursuing alignment in everything I do. Whether I'm mapping a complex enterprise workflow or guiding a class through a sequence, the foundation is the same: total presence, careful attention, and the belief that precision and care produce the best outcomes.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__contact">
+        <h2>Get in Touch</h2>
+        <p>I'm always open to conversations about product management, AI transformation, and enterprise technology.</p>
+        <a href="https://linkedin.com/in/jessicaxl" target="_blank" rel="noopener" class="btn btn--gold">View LinkedIn Profile</a>
+        <p class="footer__location">Los Angeles, CA</p>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Jessica Liu. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => { links.classList.toggle('open'); toggle.classList.toggle('open'); });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { links.classList.remove('open'); toggle.classList.remove('open'); }));
+
+    const themeToggle = document.querySelector('.nav__theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('jessica-theme', next);
+    });
+  </script>
+</body>
+</html>

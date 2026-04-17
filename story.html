@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Story — Jessica Liu</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function() {
+      var saved = localStorage.getItem('jessica-theme');
+      var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body class="page--story">
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Jessica Liu</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="story.html" class="active">My Story</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="methodology.html">How I Work</a></li>
+          <li><a href="ai.html">AI & Innovation</a></li>
+          <li><a href="beyond.html">Beyond Work</a></li>
+        </ul>
+        <button class="nav__theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="nav__theme-icon nav__theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="nav__theme-icon nav__theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <button class="nav__toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section page-content">
+    <div class="container">
+      <div class="page-header-ornate">
+        <h2>My Story</h2>
+        <div class="page-header-ornate__diamond"></div>
+        <p class="page-header-ornate__subtitle">A life shaped by discipline, curiosity, and reinvention</p>
+      </div>
+
+      <div class="illustration-frame">
+        <img src="assets/background.png" alt="Illustration representing my journey" />
+      </div>
+
+      <div class="story-path">
+
+      <div class="story-chapter story-chapter--left">
+        <div class="story-chapter__marker">
+          <span class="story-chapter__number">01</span>
+          <span class="story-chapter__label">Origins</span>
+        </div>
+        <h3 class="story-chapter__title">A Childhood in the Gymnasium</h3>
+        <div class="prose">
+          <p>I grew up on a university campus in China, where my father was a professor at a state-owned sports university. From a very young age, I was immersed in the world of elite athletics — training intensively in rhythmic gymnastics through specialized youth classes at the university. Those early years built a deep foundation of discipline, precision, and body awareness that would shape everything that followed.</p>
+        </div>
+      </div>
+
+      <div class="story-chapter story-chapter--right story-chapter--far">
+        <div class="story-chapter__marker">
+          <span class="story-chapter__number">02</span>
+          <span class="story-chapter__label">The Sport</span>
+        </div>
+        <h3 class="story-chapter__title">Not the Gymnastics You Think</h3>
+        <div class="prose">
+          <p>When people hear "gymnastics," they usually picture vaults, uneven bars, and floor tumbling. Rhythmic gymnastics is a different sport entirely — a fusion of dance, ballet, and apparatus manipulation performed to music. Athletes perform with ribbon, ball, hoop, clubs, and rope, and are judged on grace, artistic expression, and technical precision.</p>
+          <p>I trained in sessions of two to three hours at a time, three to four times a week, building flexibility, coordination, and the ability to perform complex sequences under pressure. The training was rigorous and exacting — every movement had to be precise, every routine rehearsed to the point of instinct.</p>
+        </div>
+        <div class="stat-inline-grid">
+          <div class="stat-inline">
+            <span class="stat-inline__number">2–3</span>
+            <span class="stat-inline__label">Hours per session</span>
+          </div>
+          <div class="stat-inline">
+            <span class="stat-inline__number">3–4</span>
+            <span class="stat-inline__label">Sessions per week</span>
+          </div>
+          <div class="stat-inline">
+            <span class="stat-inline__number">5</span>
+            <span class="stat-inline__label">Apparatus types</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-chapter story-chapter--left story-chapter--far">
+        <div class="story-chapter__marker">
+          <span class="story-chapter__number">03</span>
+          <span class="story-chapter__label">Arrival</span>
+        </div>
+        <h3 class="story-chapter__title">A New Country at 12</h3>
+        <div class="prose">
+          <p>At age 12, I came to the United States. I didn't speak English. It was a second language I wouldn't begin learning until I arrived. Without the ability to easily communicate or hang out with friends, I spent much of my time on the computer — which became both a refuge and a gateway. That solitary immersion in technology planted the seeds for a career I never planned but was naturally drawn toward.</p>
+        </div>
+      </div>
+
+      <div class="story-chapter story-chapter--right story-chapter--far">
+        <div class="story-chapter__marker">
+          <span class="story-chapter__number">04</span>
+          <span class="story-chapter__label">Discovery</span>
+        </div>
+        <h3 class="story-chapter__title">Finding Technology</h3>
+        <div class="prose">
+          <p>In high school, I used technology to promote myself — building my own personal website. HTML was difficult at the time, so I used a tool called Homestead.com, and later graduated to Dreamweaver and FrontPage. That early work opened doors sooner than I expected: starting freshman year in the university, the campus web development team hired me as a part-time student employee. After two years there, I had real hands-on experience that made me a natural fit for the IT industry.</p>
+          <p>Meanwhile, I was playing around extensively with other software — Photoshop, CoolEdit for voice recording — software was already deeply intuitive for me.</p>
+        </div>
+        <div class="tool-pills">
+          <span class="tool-pill">Homestead.com</span>
+          <span class="tool-pill">Dreamweaver</span>
+          <span class="tool-pill">FrontPage</span>
+          <span class="tool-pill">Photoshop</span>
+          <span class="tool-pill">CoolEdit</span>
+        </div>
+      </div>
+
+      <div class="story-chapter story-chapter--left story-chapter--close">
+        <div class="story-chapter__marker">
+          <span class="story-chapter__number">05</span>
+          <span class="story-chapter__label">Turning Point</span>
+        </div>
+        <h3 class="story-chapter__title">From Marketing Major to Enterprise Tech</h3>
+        <div class="prose">
+          <p>As a marketing major with a business education at the University of Pittsburgh, I never expected to end up in IT. But when Hyland Software showed up as a booth at my university's career fair, I handed over a resume. That conversation led to my first job in enterprise software, and it's been an enjoyable ride ever since. I didn't study my way into tech — I built my way in, driven by curiosity and a natural comfort with tools.</p>
+        </div>
+      </div>
+
+      <div class="story-chapter story-chapter--right story-chapter--far">
+        <div class="story-chapter__marker">
+          <span class="story-chapter__number">06</span>
+          <span class="story-chapter__label">Today</span>
+        </div>
+        <h3 class="story-chapter__title">The Thread That Runs Through</h3>
+        <div class="prose">
+          <p>That combination of athletic rigor and self-taught tech curiosity became the foundation of my professional approach. The same discipline I brought to the gymnasium — exhaustive preparation, precision under pressure, the pursuit of total alignment — I bring to product management every day.</p>
+          <p>Today, after 18 years in enterprise technology, I remain drawn to practices that demand total presence — whether it's designing a complex enterprise system, teaching a yoga class, or exploring what's possible with AI.</p>
+        </div>
+      </div>
+
+      </div><!-- /.story-path -->
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__contact">
+        <h2>Get in Touch</h2>
+        <p>I'm always open to conversations about product management, AI transformation, and enterprise technology.</p>
+        <a href="https://linkedin.com/in/jessicaxl" target="_blank" rel="noopener" class="btn btn--gold">View LinkedIn Profile</a>
+        <p class="footer__location">Los Angeles, CA</p>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Jessica Liu. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => { links.classList.toggle('open'); toggle.classList.toggle('open'); });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { links.classList.remove('open'); toggle.classList.remove('open'); }));
+
+    const themeToggle = document.querySelector('.nav__theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('jessica-theme', next);
+    });
+  </script>
+</body>
+</html>

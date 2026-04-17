@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career — Jessica Liu</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function() {
+      var saved = localStorage.getItem('jessica-theme');
+      var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body class="page--career">
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Jessica Liu</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="story.html">My Story</a></li>
+          <li><a href="career.html" class="active">Career</a></li>
+          <li><a href="methodology.html">How I Work</a></li>
+          <li><a href="ai.html">AI & Innovation</a></li>
+          <li><a href="beyond.html">Beyond Work</a></li>
+        </ul>
+        <button class="nav__theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="nav__theme-icon nav__theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="nav__theme-icon nav__theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <button class="nav__toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section section--alt page-content">
+    <div class="container">
+      <div class="page-header-ornate">
+        <h2>Career</h2>
+        <div class="page-header-ornate__diamond"></div>
+        <p class="page-header-ornate__subtitle">18 years of enterprise product leadership</p>
+      </div>
+
+      <div class="badge-row">
+        <div class="badge-item">
+          <div class="badge-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          </div>
+          <div class="badge-item__text">
+            <strong>18 Years</strong>
+            In Enterprise PM
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-7m7 5h-7m7 5h-7M5 7h.01M5 12h.01M5 17h.01"/></svg>
+          </div>
+          <div class="badge-item__text">
+            <strong>5 Years</strong>
+            In Consulting
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <div class="badge-item__text">
+            <strong>Global Teams</strong>
+            Fluent in Mandarin + English
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item timeline__item--highlight">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Personal Project</h3>
+              <span class="timeline__role">Full-Stack Yoga Class Platform — Built Entirely with AI</span>
+              <span class="timeline__meta">2026</span>
+            </div>
+            <div class="project-card__body">
+              <p>Using Claude Code, I built a production-ready web application for my yoga teaching practice entirely through conversational AI — describing what I wanted in plain language while the AI translated my intent into working code. Features include sign-up flows with capacity limits and rolling availability windows, cancellation flows with confirmation tokens, scheduling logic, guest registration, a liability waiver, automated email notifications, and calendar invites with Zoom integration. The backend runs on Google Apps Script with Google Sheets as the data layer. A full Playwright test suite covers end-to-end flows, API validations, responsive UI checks, and smoke tests. Not a single line of code was written manually.</p>
+            </div>
+            <div class="stat-grid">
+              <div class="stat"><span class="stat__number">6,949</span><span class="stat__label">Lines of Code</span></div>
+              <div class="stat"><span class="stat__number">452</span><span class="stat__label">Automated Tests</span></div>
+              <div class="stat"><span class="stat__number">21</span><span class="stat__label">Device Configs</span></div>
+              <div class="stat"><span class="stat__number">234</span><span class="stat__label">Prompts</span></div>
+              <div class="stat"><span class="stat__number">~3</span><span class="stat__label">Working Days</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Launch by NTT Data</h3>
+              <span class="timeline__role">Associate Director, Product Management</span>
+              <span class="timeline__meta">Nov 2022 – Jul 2025 &bull; Remote</span>
+            </div>
+            <ul>
+              <li><strong>Salesforce — Agentforce Platform:</strong> Directed a team of 6 Product Owners within a SAFe Agile Release Train, delivering AI agents built on LLMs, RAG architectures, and prompt engineering</li>
+              <li>Defined product vision, solution intent, scope, value hypotheses, and roadmaps aligned with enterprise strategy and measurable business outcomes</li>
+              <li>Built product governance frameworks from scratch including standardized Epic Brief documentation and PO Sync cadences</li>
+              <li>Coached 50+ team members on Agile Transformation and Product Management principles</li>
+              <li><strong>NTT Data Japan — Flow Management Products:</strong> Conceptualized and led end-to-end development of two enterprise digital products from ideation to MVP, owning product vision, roadmap strategy, PI planning, and backlog prioritization</li>
+              <li><em>Flow Simulator</em> — a real-time workflow visualization tool that surfaced bottlenecks and operational inefficiencies, giving teams visibility into where work stalled and enabling data-driven process improvement across delivery pipelines</li>
+              <li><em>Executive Dashboard</em> — a C-level performance view aggregating business KPIs, delivery metrics, and DORA metrics into a single source of truth for measuring team health, throughput, and product outcomes</li>
+              <li>Defined outcome-oriented success metrics and KPIs tied to client engagement and revenue; iterated on roadmap priorities based on user feedback and production data</li>
+              <li>Mentored and coached Japan-based team members on Agile and product management principles throughout the product development lifecycle, building product competency within the local organization</li>
+              <li><strong>Pacific Gas &amp; Electric (PG&amp;E):</strong> Led Agile Scrum team delivering a customer-portal enrollment flow, translating regulatory and legal requirements into compliant product functionality including conditional sales flows, eligibility logic, and disclosure screens</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Corel Corporation</h3>
+              <span class="timeline__role">Manager, Product Management</span>
+              <span class="timeline__meta">Jun 2022 – Nov 2022 &bull; Remote</span>
+            </div>
+            <ul>
+              <li>Led a globally distributed team of 60 engineers and 3 Product Managers delivering a suite of software products valued at ~$30M in annual revenue</li>
+              <li>Partnered across international time zones with Product Managers based in Taiwan and a development team in Hangzhou, China — leveraging Mandarin fluency to bridge cultural and operational differences and keep delivery aligned</li>
+              <li>Directed product roadmap, cross-functional alignment, and backlog prioritization across multiple product lines</li>
+              <li>Reinforced product management best practices including KPIs, OKRs, user flow diagrams, and alignment from epics through user stories</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Launch by NTT Data</h3>
+              <span class="timeline__role">Senior Product Manager</span>
+              <span class="timeline__meta">Jun 2021 – Jun 2022 &bull; Los Angeles, CA</span>
+            </div>
+            <ul>
+              <li><strong>Sony PlayStation — Global Partner Platform:</strong> Owned product roadmap for a web-based partner platform enabling thousands of partners worldwide to onboard and distribute products through a controlled, secure workflow</li>
+              <li>Consolidated 60 workflows and 25 applications into a single platform, cutting partner onboarding from 7–10 days to approximately 10 minutes and improving global operational consistency</li>
+              <li><strong>ITS Logistics — Enterprise Financial System:</strong> Led 4 Product Owners and 4 scrum teams (100+ engineers) building a new enterprise accounting and financial transaction system from conceptualization to launch, managing 5,000+ daily invoices</li>
+              <li>Designed features to monitor and reduce financial risk of carrier/vendor defaults; reduced time spent on data collection, conflict resolution, and report generation by 50%</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>AT&amp;T / DirecTV</h3>
+              <span class="timeline__role">Senior Product Manager / Senior Product Owner</span>
+              <span class="timeline__meta">Feb 2012 – Dec 2019 &bull; Los Angeles, CA</span>
+            </div>
+            <ul>
+              <li>Led product requirements and delivery for OTT streaming subscription platforms and customer-facing operational systems including user provisioning, content availability, access and entitlement flows, device/platform restrictions, and monetization logic across web, iOS, Android, tablet, and set-top platforms</li>
+              <li>Managed Finance Billing product lines including Modify Card (proactive card update to reduce bad debt from failed charges), Cash Card Refund (eliminated 100K+ monthly check processing transactions), and Non-Return Fee logic modifications</li>
+              <li>Led AT&amp;T/DirecTV MDU Synergy requirements: migrated legacy Multi-Dwelling Unit customers onto a new platform, remapping system metadata and process flows across drastically different architectural environments and offshore third-party vendors</li>
+              <li>Formulated product requirements through elicitation sessions with 100+ stakeholders across programming, content operations, legal, rights management, customer experience, and finance</li>
+              <li>Created customer journey flows, evaluated trade-offs across multiple product design variations, and prepared cost-benefit analyses to prioritize requirements under budget and technical constraints</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Hyland Software</h3>
+              <span class="timeline__role">Product Manager / Channel Manager</span>
+              <span class="timeline__meta">Jul 2007 – Apr 2011 &bull; Westlake, OH</span>
+            </div>
+            <ul>
+              <li>Owned roadmap for enterprise content management and process automation modules on the OnBase platform, supporting compliance-sensitive financial and government clients</li>
+              <li>Designed enterprise workflow and document-management capabilities incorporating role-based access controls, document lifecycle governance, and workflow automation rules</li>
+              <li>Delivered an enterprise Loan Origination and Regulatory Reporting solution for a top-tier bank, integrating report-capture technology to transform audited banking reports into structured, searchable digital records</li>
+              <li>Produced enablement materials and delivered training/webinars to 800+ employees, partners, and customers; led partner engagements in Greater China supporting pre-sales, localization, and customer education</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="credentials">
+        <h3>Certifications</h3>
+        <div class="credentials__pills">
+          <span class="pill">SAFe 6 POPM</span>
+          <span class="pill">SAFe 6 Agile PM</span>
+          <span class="pill">Certified Product Manager</span>
+          <span class="pill">Salesforce AI Associate</span>
+          <span class="pill">Salesforce Agentforce Specialist</span>
+        </div>
+      </div>
+
+      <div class="credentials">
+        <h3>Tools & Skills</h3>
+        <div class="tools-grid">
+          <div class="tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+            <span>Jira</span>
+          </div>
+          <div class="tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            <span>Jira Align</span>
+          </div>
+          <div class="tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Confluence</span>
+          </div>
+          <div class="tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>Agentforce</span>
+          </div>
+          <div class="tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>BrowserStack</span>
+          </div>
+          <div class="tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+            <span>Visio</span>
+          </div>
+          <div class="tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v4m0 12v4m10-10h-4M6 12H2m14.24-7.24l-2.83 2.83m-6.82 6.82l-2.83 2.83m0-12.48l2.83 2.83m6.82 6.82l2.83 2.83"/></svg>
+            <span>Figma</span>
+          </div>
+          <div class="tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <span>Google Analytics</span>
+          </div>
+          <div class="tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="4" height="10"/><rect x="13" y="7" width="4" height="6"/></svg>
+            <span>Trello</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="credentials">
+        <h3>Education</h3>
+        <div class="education-list">
+          <div class="education-item">
+            <div class="education-item__symbol education-item__symbol--pitt">
+              <svg viewBox="0 0 60 72" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 2 L5 12 L5 42 Q5 58 30 70 Q55 58 55 42 L55 12 Z" fill="#003594" stroke="#FFB81C" stroke-width="2"/>
+                <path d="M30 6 L8 15 L8 41 Q8 55 30 66 Q52 55 52 41 L52 15 Z" fill="none" stroke="#FFB81C" stroke-width="0.5" opacity="0.5"/>
+                <text x="30" y="42" font-family="Georgia, serif" font-weight="700" font-size="13" fill="#FFB81C" text-anchor="middle" letter-spacing="1">PITT</text>
+                <line x1="14" y1="50" x2="46" y2="50" stroke="#FFB81C" stroke-width="0.5" opacity="0.6"/>
+                <text x="30" y="58" font-family="Georgia, serif" font-weight="400" font-size="5" fill="#FFB81C" text-anchor="middle" letter-spacing="0.5">1787</text>
+              </svg>
+            </div>
+            <div class="education-item__text">
+              <strong>University of Pittsburgh</strong>
+              <span>Bachelor of Business Administration in Marketing, Minor in Economics · 2007</span>
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-item__symbol education-item__symbol--product">
+              <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="28" fill="var(--color-navy)" stroke="var(--color-gold)" stroke-width="2"/>
+                <circle cx="30" cy="30" r="23" fill="none" stroke="var(--color-gold-light)" stroke-width="0.5" opacity="0.5"/>
+                <path d="M20 22 L30 15 L40 22 L40 38 L30 45 L20 38 Z" fill="none" stroke="var(--color-gold-light)" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="3.5" fill="var(--color-gold)"/>
+              </svg>
+            </div>
+            <div class="education-item__text">
+              <strong>Product School</strong>
+              <span>Certified Product Manager · 2019</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__contact">
+        <h2>Get in Touch</h2>
+        <p>I'm always open to conversations about product management, AI transformation, and enterprise technology.</p>
+        <a href="https://linkedin.com/in/jessicaxl" target="_blank" rel="noopener" class="btn btn--gold">View LinkedIn Profile</a>
+        <p class="footer__location">Los Angeles, CA</p>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Jessica Liu. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => { links.classList.toggle('open'); toggle.classList.toggle('open'); });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { links.classList.remove('open'); toggle.classList.remove('open'); }));
+
+    const themeToggle = document.querySelector('.nav__theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('jessica-theme', next);
+    });
+  </script>
+</body>
+</html>
