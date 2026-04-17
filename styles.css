@@ -336,6 +336,7 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(1.12) contrast(1.15) saturate(1.08);
 }
 
 .hero__photo-placeholder::after {
@@ -585,6 +586,73 @@ h1, h2, h3, h4 {
 }
 
 .timeline__content li::marker {
+  color: var(--color-gold);
+}
+
+/* ===== Engagement blocks (client work within a role) ===== */
+.engagement {
+  margin-bottom: 18px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--color-border);
+}
+
+.engagement:first-of-type {
+  margin-top: 8px;
+}
+
+.engagement:last-child {
+  margin-bottom: 0;
+}
+
+.engagement__title {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.engagement__title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 14px;
+  height: 2px;
+  background: var(--color-blue);
+  border-radius: 1px;
+}
+
+[data-theme="dark"] .engagement__title {
+  color: var(--color-gold-light);
+}
+
+[data-theme="dark"] .engagement__title::before {
+  background: var(--color-gold-light);
+}
+
+.engagement__bullets {
+  padding-left: 20px;
+  list-style: disc;
+  margin: 0;
+}
+
+.engagement__bullets li {
+  margin-bottom: 6px;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.engagement__bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.engagement__bullets li::marker {
   color: var(--color-gold);
 }
 
