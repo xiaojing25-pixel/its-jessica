@@ -50,7 +50,7 @@
       </div>
 
       <div class="badge-row">
-        <div class="badge-item">
+        <div class="badge-item anim-slide-up" data-stagger="0">
           <div class="badge-item__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
           </div>
@@ -59,7 +59,7 @@
             In Enterprise PM
           </div>
         </div>
-        <div class="badge-item">
+        <div class="badge-item anim-slide-up" data-stagger="1">
           <div class="badge-item__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-7m7 5h-7m7 5h-7M5 7h.01M5 12h.01M5 17h.01"/></svg>
           </div>
@@ -68,7 +68,7 @@
             In Consulting
           </div>
         </div>
-        <div class="badge-item">
+        <div class="badge-item anim-slide-up" data-stagger="2">
           <div class="badge-item__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
           </div>
@@ -80,7 +80,7 @@
       </div>
 
       <div class="timeline">
-        <div class="timeline__item timeline__item--highlight">
+        <div class="timeline__item timeline__item--highlight anim-slide-up" data-stagger="0">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__header">
@@ -101,7 +101,7 @@
           </div>
         </div>
 
-        <div class="timeline__item">
+        <div class="timeline__item anim-slide-up" data-stagger="1">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__header">
@@ -139,7 +139,7 @@
           </div>
         </div>
 
-        <div class="timeline__item">
+        <div class="timeline__item anim-slide-up" data-stagger="2">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__header">
@@ -156,7 +156,7 @@
           </div>
         </div>
 
-        <div class="timeline__item">
+        <div class="timeline__item anim-slide-up" data-stagger="3">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__header">
@@ -182,7 +182,7 @@
           </div>
         </div>
 
-        <div class="timeline__item">
+        <div class="timeline__item anim-slide-up" data-stagger="4">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__header">
@@ -200,7 +200,7 @@
           </div>
         </div>
 
-        <div class="timeline__item">
+        <div class="timeline__item anim-slide-up" data-stagger="5">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__header">
@@ -218,7 +218,7 @@
         </div>
       </div>
 
-      <div class="credentials">
+      <div class="credentials anim-slide-up" data-stagger="0">
         <h3>Certifications</h3>
         <div class="credentials__pills">
           <span class="pill">SAFe 6 POPM</span>
@@ -229,7 +229,7 @@
         </div>
       </div>
 
-      <div class="credentials">
+      <div class="credentials anim-slide-up" data-stagger="1">
         <h3>Tools & Skills</h3>
         <div class="tools-grid">
           <div class="tool-badge">
@@ -271,7 +271,7 @@
         </div>
       </div>
 
-      <div class="credentials">
+      <div class="credentials anim-slide-up" data-stagger="2">
         <h3>Education</h3>
         <div class="education-list">
           <div class="education-item">
@@ -313,7 +313,10 @@
       <div class="footer__contact">
         <h2>Get in Touch</h2>
         <p>I'm always open to conversations about product management, AI transformation, and enterprise technology.</p>
-        <a href="https://linkedin.com/in/jessicaxl" target="_blank" rel="noopener" class="btn btn--gold">View LinkedIn Profile</a>
+        <div class="footer__buttons">
+          <a href="https://linkedin.com/in/jessicaxl" target="_blank" rel="noopener" class="btn btn--gold">View LinkedIn Profile</a>
+          <a href="mailto:jessica.liu.x@icloud.com" class="btn btn--outline">Contact Me</a>
+        </div>
         <p class="footer__location">Los Angeles, CA</p>
       </div>
       <div class="footer__bottom">
@@ -335,6 +338,16 @@
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('jessica-theme', next);
     });
+
+    const animObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          animObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.anim-slide-up, .anim-slide-from-left, .anim-slide-from-right').forEach((el) => animObserver.observe(el));
   </script>
 </body>
 </html>

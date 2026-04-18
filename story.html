@@ -55,7 +55,7 @@
 
       <div class="story-path">
 
-      <div class="story-chapter story-chapter--left">
+      <div class="story-chapter story-chapter--left anim-slide-from-left">
         <div class="story-chapter__marker">
           <span class="story-chapter__number">01</span>
           <span class="story-chapter__label">Origins</span>
@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <div class="story-chapter story-chapter--right story-chapter--far">
+      <div class="story-chapter story-chapter--right story-chapter--far anim-slide-from-right">
         <div class="story-chapter__marker">
           <span class="story-chapter__number">02</span>
           <span class="story-chapter__label">The Sport</span>
@@ -92,7 +92,7 @@
         </div>
       </div>
 
-      <div class="story-chapter story-chapter--left story-chapter--far">
+      <div class="story-chapter story-chapter--left story-chapter--far anim-slide-from-left">
         <div class="story-chapter__marker">
           <span class="story-chapter__number">03</span>
           <span class="story-chapter__label">Arrival</span>
@@ -103,7 +103,7 @@
         </div>
       </div>
 
-      <div class="story-chapter story-chapter--right story-chapter--far">
+      <div class="story-chapter story-chapter--right story-chapter--far anim-slide-from-right">
         <div class="story-chapter__marker">
           <span class="story-chapter__number">04</span>
           <span class="story-chapter__label">Discovery</span>
@@ -122,7 +122,7 @@
         </div>
       </div>
 
-      <div class="story-chapter story-chapter--left story-chapter--close">
+      <div class="story-chapter story-chapter--left story-chapter--close anim-slide-from-left">
         <div class="story-chapter__marker">
           <span class="story-chapter__number">05</span>
           <span class="story-chapter__label">Turning Point</span>
@@ -133,7 +133,7 @@
         </div>
       </div>
 
-      <div class="story-chapter story-chapter--right story-chapter--far">
+      <div class="story-chapter story-chapter--right story-chapter--far anim-slide-from-right">
         <div class="story-chapter__marker">
           <span class="story-chapter__number">06</span>
           <span class="story-chapter__label">Today</span>
@@ -154,7 +154,10 @@
       <div class="footer__contact">
         <h2>Get in Touch</h2>
         <p>I'm always open to conversations about product management, AI transformation, and enterprise technology.</p>
-        <a href="https://linkedin.com/in/jessicaxl" target="_blank" rel="noopener" class="btn btn--gold">View LinkedIn Profile</a>
+        <div class="footer__buttons">
+          <a href="https://linkedin.com/in/jessicaxl" target="_blank" rel="noopener" class="btn btn--gold">View LinkedIn Profile</a>
+          <a href="mailto:jessica.liu.x@icloud.com" class="btn btn--outline">Contact Me</a>
+        </div>
         <p class="footer__location">Los Angeles, CA</p>
       </div>
       <div class="footer__bottom">
@@ -176,6 +179,16 @@
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('jessica-theme', next);
     });
+
+    const animObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          animObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.anim-slide-up, .anim-slide-from-left, .anim-slide-from-right').forEach((el) => animObserver.observe(el));
   </script>
 </body>
 </html>

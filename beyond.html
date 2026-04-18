@@ -55,12 +55,12 @@
         <p>Outside of product management, I'm a certified yoga teacher — teaching at local neighborhood locations and continuing a lifelong practice of physical discipline that began on a gymnasium floor in China.</p>
       </div>
 
-      <div class="prose">
+      <div class="prose anim-slide-up" data-stagger="0">
         <p>Yoga found me after years of intensive physical training — and it offered something different. Where rhythmic gymnastics demanded outward precision and performance, yoga demands introspective alignment and energetic awareness. The rigor is the same; the direction is inward.</p>
       </div>
 
       <div class="badge-row">
-        <div class="badge-item">
+        <div class="badge-item anim-slide-up" data-stagger="1">
           <div class="badge-item__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 6 8 10 12 14c4-4 4-8 0-12z"/></svg>
           </div>
@@ -69,7 +69,7 @@
             Active practice
           </div>
         </div>
-        <div class="badge-item">
+        <div class="badge-item anim-slide-up" data-stagger="2">
           <div class="badge-item__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/></svg>
           </div>
@@ -78,7 +78,7 @@
             Neighborhood classes
           </div>
         </div>
-        <div class="badge-item">
+        <div class="badge-item anim-slide-up" data-stagger="3">
           <div class="badge-item__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
           </div>
@@ -98,7 +98,7 @@
         </svg>
       </div>
 
-      <div class="prose">
+      <div class="prose anim-slide-up" data-stagger="4">
         <p>The thread connecting rhythmic gymnastics, yoga, and my professional work is discipline — the commitment to showing up, preparing exhaustively, and pursuing alignment in everything I do. Whether I'm mapping a complex enterprise workflow or guiding a class through a sequence, the foundation is the same: total presence, careful attention, and the belief that precision and care produce the best outcomes.</p>
       </div>
     </div>
@@ -109,7 +109,10 @@
       <div class="footer__contact">
         <h2>Get in Touch</h2>
         <p>I'm always open to conversations about product management, AI transformation, and enterprise technology.</p>
-        <a href="https://linkedin.com/in/jessicaxl" target="_blank" rel="noopener" class="btn btn--gold">View LinkedIn Profile</a>
+        <div class="footer__buttons">
+          <a href="https://linkedin.com/in/jessicaxl" target="_blank" rel="noopener" class="btn btn--gold">View LinkedIn Profile</a>
+          <a href="mailto:jessica.liu.x@icloud.com" class="btn btn--outline">Contact Me</a>
+        </div>
         <p class="footer__location">Los Angeles, CA</p>
       </div>
       <div class="footer__bottom">
@@ -131,6 +134,16 @@
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('jessica-theme', next);
     });
+
+    const animObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          animObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.anim-slide-up, .anim-slide-from-left, .anim-slide-from-right').forEach((el) => animObserver.observe(el));
   </script>
 </body>
 </html>
