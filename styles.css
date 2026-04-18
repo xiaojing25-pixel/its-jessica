@@ -2016,14 +2016,15 @@ body,
 /* ===== Entrance Animations ===== */
 
 @media (prefers-reduced-motion: reduce) {
+  /* Respect reduced-motion by removing translation, but keep the opacity
+     fade — a gentle fade-in is unlikely to trigger motion sickness. */
   .anim-drop-in,
   .anim-slide-right,
+  .anim-slide-right > *,
   .anim-slide-up,
   .anim-slide-from-left,
   .anim-slide-from-right {
-    opacity: 1 !important;
     transform: none !important;
-    animation: none !important;
   }
 }
 
