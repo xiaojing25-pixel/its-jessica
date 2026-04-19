@@ -656,6 +656,58 @@ h1, h2, h3, h4 {
   color: var(--color-gold);
 }
 
+.engagement__bullets .project-link {
+  color: var(--color-gold-dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-gold-light);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.engagement__bullets .project-link:hover {
+  color: var(--color-gold);
+  border-bottom-color: var(--color-gold);
+}
+
+[data-theme="dark"] .engagement__bullets .project-link {
+  color: var(--color-gold-light);
+  border-bottom-color: var(--color-gold-dark);
+}
+
+[data-theme="dark"] .engagement__bullets .project-link:hover {
+  color: var(--color-gold);
+  border-bottom-color: var(--color-gold);
+}
+
+.engagement__bullets .project-link-cta {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-gold-dark);
+  text-decoration: none;
+  padding: 2px 10px;
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.engagement__bullets .project-link-cta:hover {
+  background-color: var(--color-gold);
+  color: #fff;
+}
+
+[data-theme="dark"] .engagement__bullets .project-link-cta {
+  color: var(--color-gold-light);
+  border-color: var(--color-gold-light);
+}
+
+[data-theme="dark"] .engagement__bullets .project-link-cta:hover {
+  background-color: var(--color-gold-light);
+  color: var(--color-navy);
+}
+
 /* ===== Project in Timeline ===== */
 .timeline__content .project-card__body {
   margin-bottom: 0;
